@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type ="text/css" href="estilo.css">
+    <title>Reto 3 y 4 del ciclo_3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <script type="text/javascript" src="js/misFuncionesCabin.js"></script>
+    <script type="text/javascript" src="js/misFuncionesClient.js"></script>
+    <script type="text/javascript" src="js/misFuncionesMensaje.js"></script>
+    <script type="text/javascript" src="js/misFuncionesReservaciones.js"></script>
+
+</head>
+
+<body>
+<h1> *Categorias*</h1>
+<div id ="resultado1"></div>
+<button onclick="traerInformacionCategorias()" >Consultar Categorias</button>
+
+<div>
+    <input type="text" id="Cname" placeholder="name">
+    <input type="text" id="Cdescription" placeholder="description">
+
+</div>
+
+<button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+
+
+<!--Cabin-->
+
+<h1> *Cabañas*</h1>
+<div id ="resultado2"></div>
+<button onclick="traerInformacionCabin()" >Consultar Cabin</button>
+
+<div>
+    <input type="text" id="Caname" placeholder="name">
+    <input type="text" id="Cabrand" placeholder="brand">
+    <input type="number" id="Carooms" placeholder="rooms">
+    <input type="text" id="Cadescription" placeholder="description">
+
+</div>
+<button onclick="guardarInformacionCabin()">Guardar Cabin</button>
+
+
+<!--Client-->
+
+<h1> *Clientes*</h1>
+<div id ="resultado3"></div>
+<button onclick="traerInformacionClientes()" >Consultar Clientes</button>
+
+<div>
+    <input type="text" id="Clemail" placeholder="email">
+    <input type="text" id="Clpassword" placeholder="password">
+    <input type="text" id="Clname" placeholder="name">
+    <input type="number" id="Clage" placeholder="age">
+
+</div>
+<button onclick="guardarInformacionClientes()">Guardar Clientes</button>
+
+
+<!--Mensajes-->
+
+<h1> *Mensajes*</h1>
+<div id ="resultado4"></div>
+<button onclick="traerInformacionMensajes()" >Consultar Mensajes</button>
+
+<div>
+    <input type="text" id="MmessageText" placeholder="messageText">
+    
+</div>
+<button onclick="guardarInformacionMensajes()">Guardar Mensajes</button>
+
+
+
+<!--Reservaciones-->
+
+<h1> *Reservaciones*</h1>
+<div id ="resultado5"></div>
+<button onclick="traerInformacionReservaciones()" >Consultar Reservaciones</button>
+
+<div>
+    <input type="date" id="startDate" placeholder="startDate">
+    <input type="date" id="devolutionDate" placeholder="devolutionDate">
+    <input type="text" id="status" placeholder="status">
+    
+    
+</div>
+<button onclick="guardarInformacionReservaciones()">Guardar Reservaciones</button>
+
+
+</body>
+</html>
